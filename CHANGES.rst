@@ -30,13 +30,40 @@ and this project adheres to `Semantic Versioning <https://semver.org/spec/v2.0.0
 Added
 -----
 
+* Added CHOOSE() function
+* Added FORECAST() function
+* Added INTERCEPT() function
+* Added IFNA() function
+* Added ISBLANK() function
+* Added ISLOGICAL() function
+* Added ISNONTEXT() function
+* Added N() function
+* Added NA() function
+* Added SLOPE() function
+* Added SUBSTITUTE() function
 * Added TEXT() function  (Thanks, Luckykarter)
+* Added TREND() function
+* Added Reference Form for INDEX()
+* Added str_params to excel_helper()
+* Added ExcelCompiler.validate_serialized()
+
+Changed
+-------
+
+* Improve LINEST() compatibilty w/ Excel
+* Improve TEXT() compatibilty w/ Excel
+* Improve error and number handling in some Text functions
+* Improve IFS() to support array context
+* Missing references from INDIRECT() and OFFSET() resolve more often
 
 Fixed
 -----
 
 * Fix #111, Incorrect implementation of YEARFRAC
-
+* Fixed some exceptions in LINEST()
+* Fix serialize ranges with formulas
+* Fixed a minor bug in DATE()
+* Fixed TIMEVALUE() parsing for elapsed times
 
 [1.0b26] - 2021-06-18
 =====================
